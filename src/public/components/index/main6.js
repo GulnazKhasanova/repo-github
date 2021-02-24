@@ -1,17 +1,18 @@
-import basket from "comp/cart"
-import products from "comp/products"
+import Vue from 'vue'
+import Vuelidate from 'vuelidate'
+import ShopHeader from "comp/header"
+import ShopFooter from "comp/footer"
 import mySearch from "comp/mySearch"
-import shopping from "comp/shopping_cart"
+import router from "@/public/router/router"
 
+Vue.use(Vuelidate)
 
 const API = 'https://raw.githubusercontent.com/kellolo/static/master/JSON'
 
 const app = {
     el: "#adde",
+    router,
     data: {
-        showCart: false,
-        // catalogUrl: '/catalog.json',
-        // cartUrl: '/basket.json',
         products: [],
         filtered: [],
         cartItem: [],
@@ -19,18 +20,21 @@ const app = {
         userSearch: '',
     },
     components: {
-        basket,
-        products,
+
         mySearch,
-        shopping
+        ShopHeader,
+        ShopFooter
+
     },
     methods: {
+        cartShow() {
+            this.showCart = !this.showCart
+        },
         getJson(url) {
             return fetch(url)
                 .then(result => result.json())
                 .catch(error => {
-                    // console.log(error)
-                    //this.$refs.error.text = error
+                    console.log(error)
                 })
         },
         deleteJson(url) {
@@ -40,8 +44,6 @@ const app = {
                 .then(result => result.json())
                 .catch(error => {
                     console.log(error)
-                    // console.log(error)
-                    //this.$refs.error.text = error
                 })
         },
         postJson(url, data) {
@@ -54,8 +56,7 @@ const app = {
             })
                 .then(result => result.json())
                 .catch(error => {
-                    // console.log(error)
-                    //this.$refs.error.text = error
+                    console.log(error)
                 })
         },
         putJson(url, data) {
@@ -67,10 +68,7 @@ const app = {
                 body: JSON.stringify(data)
             })
                 .then(result => result.json())
-                .catch(error => {
-                    // console.log(error)
-                    this.$refs.error.text = error
-                })
+                .catch(error => console.log(error))
         },
 
 
@@ -94,7 +92,7 @@ const app = {
                     }).catch(console.log)
             }
 
-            item = Object.assign({shopping: "free", subtotal: [item.productPrice * item.amount]},item)
+            item = Object.assign({ shopping: "free", subtotal: [item.productPrice * item.amount] }, item)
             let findCart = this.shopping.find(el => el.productId === item.productId)
             if (findCart) {
                 try {
@@ -124,16 +122,16 @@ const app = {
             let find = this.shopping.find(el => el.productId === item.productId)
             if (find.amount > 1) {
                 try {
-                     await this.putJson(`/api/cart/shopping/dec`, item)
-                     find.amount--
-                 } catch (e) {
-                  console.log(e)
-                  }
-            }
-                else if (find.amount === 1) {
-                    this.deleteJson(`/api/cart/shopping/dec/${item.productId}`)
-                         .then(data => this.shopping.splice(this.shopping.indexOf(item), 1))
+                    await this.putJson(`/api/cart/shopping/dec`, item)
+                    find.amount--
+                } catch (e) {
+                    console.log(e)
                 }
+            }
+            else if (find.amount === 1) {
+                this.deleteJson(`/api/cart/shopping/dec/${item.productId}`)
+                    .then(data => this.shopping.splice(this.shopping.indexOf(item), 1))
+            }
             let findCart = this.cartItem.find(el => el.productId === item.productId)
             if (findCart.amount > 1) {
                 this.putJson(`/api/cart/dec`, item)
@@ -142,7 +140,7 @@ const app = {
                 this.deleteJson(`/api/cart/dec/${item.productId}`)
                     .then(data => this.cartItem.splice(this.cartItem.indexOf(item), 1))
             }
-            },
+        },
 
         async remove(item) {
             let find = this.cartItem.find(el => el.productId === item.productId)
@@ -153,7 +151,7 @@ const app = {
                 this.deleteJson(`/api/cart/dec/${item.productId}`)
                     .then(data => this.cartItem.splice(this.cartItem.indexOf(item), 1))
             }
-            let findCart = this.shopping.find(el => el.productId === item.productId)
+           /*  let findCart = this.shopping.find(el => el.productId === item.productId)
             if (findCart.amount > 1) {
                 try {
                     await this.putJson(`/api/cart/shopping/dec`, item)
@@ -165,10 +163,10 @@ const app = {
             else if (findCart.amount === 1) {
                 this.deleteJson(`/api/cart/shopping/dec/${item.productId}`)
                     .then(data => this.shopping.splice(this.shopping.indexOf(item), 1))
-            }
+            } */
         },
-
-      async mounted() {
+    },
+    async mounted() {
         try {
             const shopping = await this.getJson(`/api/cart`)
             for (let el of shopping.content) {
@@ -189,5 +187,5 @@ const app = {
         }
 
     }
-}}
+}
 export default app

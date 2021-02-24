@@ -17,7 +17,7 @@
         <a
           href="#"
           class="fas fa-times-circle"
-          @click.prevent="$parent.$emit('remove', cartItem)"
+          @click.prevent="createEvent(cartItem)"
           name="remov"
           data-id="cartItem.productId"
         ></a>
@@ -29,6 +29,11 @@
 <script>
 export default {
   props: ["cart-item"],
+  methods: {
+    createEvent(cartItem) {
+      this.$emit('additem', cartItem) 
+    }
+  }
 };
 </script>
 

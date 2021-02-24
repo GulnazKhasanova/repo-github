@@ -1,9 +1,10 @@
 <template>
-  <div class="basket_inner" v-show="visibility">
+  <div class="basket_inner" v-show="showCart">
     <cart-item
       v-for="item of cartItems"
       :key="item.productId"
       :cart-item="item"
+      @additem="createEvent($event)"
     ></cart-item>
     <div class="total_basket">
       <div class="total_txt">
@@ -21,8 +22,13 @@
 <script>
 import cartItem from "comp/cartItem.vue";
 export default {
-  props: ["cart-items", "visibility"],
+  props: ["cart-items", "showCart"],
   components: { cartItem },
+  methods: {
+    createEvent($event) {
+      this.$emit('additem', $event) 
+    },
+  },
 };
 </script>
 

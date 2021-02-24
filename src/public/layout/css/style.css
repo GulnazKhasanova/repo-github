@@ -15,11 +15,11 @@ body {
 }
 
 #adde > header {
-  margin-top: -151px;
+ /*  margin-top: -151px; */
   margin-left: auto;
   margin-right: auto;
   z-index: 999;
-  position: fixed;
+ /*  position: fixed; */
   width: 100%;
   /*max-width: 1600px;*/
   min-height: 151px;

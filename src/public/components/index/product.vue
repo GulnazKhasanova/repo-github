@@ -21,6 +21,11 @@
 <script>
 export default {
   props: ["product"],
+  methods: {
+    addProduct(product) {
+      this.$emit("add-product", product)
+    }
+  }
 };
 </script>
 
