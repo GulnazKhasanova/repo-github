@@ -1,19 +1,19 @@
 <template>
-  <show-header></show-header>
+  <shop-header></shop-header>
   <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </div>
   <router-view/>
-  <show-footer></show-footer>
+  <shop-footer></shop-footer>
 </template>
 <script>
-import ShopHeader from "src/components/Header";
-import ShopFooter from "src/components/Footer";
+import shopHeader from "@/components/Header";
+import shopFooter from "@/components/Footer";
 export default {
 components: {
-  ShopHeader,
-  ShopFooter,
+  shopHeader,
+  shopFooter,
 }
 };
 </script>
