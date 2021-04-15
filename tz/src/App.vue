@@ -1,15 +1,16 @@
 <template>
-  <show-header></show-header>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
+  <shop-header></shop-header>
+
+<!--  <div id="nav">-->
+<!--    <router-link to="/">Home</router-link> |-->
+<!--    <router-link to="/about">About</router-link>-->
+<!--  </div>-->
   <router-view/>
-  <show-footer></show-footer>
+  <shop-footer></shop-footer>
 </template>
 <script>
-import ShopHeader from "src/components/Header";
-import ShopFooter from "src/components/Footer";
+import ShopHeader from "@/components/Header";
+import ShopFooter from "@/components/Footer";
 export default {
 components: {
   ShopHeader,
@@ -18,6 +19,7 @@ components: {
 };
 </script>
 <style>
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

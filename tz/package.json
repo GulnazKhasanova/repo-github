@@ -8,8 +8,14 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "ansi-styles": "^4.3.0",
+    "chalk": "^4.1.0",
+    "color-convert": "^2.0.1",
+    "color-name": "^1.1.4",
     "core-js": "^3.6.5",
+    "supports-color": "^7.2.0",
     "vue": "^3.0.0",
+    "vue-loader": "^16.2.0",
     "vue-router": "^4.0.0-0"
   },
   "devDependencies": {
