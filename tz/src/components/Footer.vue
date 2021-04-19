@@ -5,14 +5,16 @@
         <img src="~@/assets/img/rectangle_9_1828.png" alt="">
       </div>
       <div class="text_footer">
-        <h3>Lorem ipsum dolor sit amet, consectetur </h3>
+        <h4>Lorem ipsum dolor sit amet, consectetur </h4>
         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        <p>Адрес</p>
+        <span>Адрес</span>
         <p>Великий Новгород,ул. Б. Санкт-Петербургская 28, офис 578</p>
-        <p>Телефон</p>
+        <hr>
+        <span>Телефон</span>
         <p>+7 (8162) 12-34-56</p>
-        <p>E-mail</p>
-        <p>example@mail.ru</p>
+        <hr>
+        <span>E-mail</span>
+        <a href="">example@mail.ru</a>
       </div>
     </div>
 
@@ -34,6 +36,7 @@ export default {
 
 <style lang="scss">
 .footer{
+  margin-top: 100px;
   position: relative;
   max-width: 2200px;
   width: 100%;
@@ -62,8 +65,36 @@ export default {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      & > h3{text-align: right;}
-      & > p{text-align: right;}
+      & > h4{text-align: right;
+        font-size: 36px;
+        line-height: 1.2;
+        font-weight: 700;
+        font-style: italic;
+        color: #ffffff;}
+      & > p{
+        margin: 0 0 10px;
+        text-align: right;
+        font-family: "Open Sans";
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        font-style: normal;
+        color: #ffffff;}
+      & > a {
+        color: #ffffff;
+      }
+      & > span{
+        margin: 10px 0;
+        text-transform: uppercase;
+        color: #ffffff;
+      }
+      & > hr{
+        width: 35%;
+        padding: 0;
+        height: 0;
+        border: none;
+        border-top: 1px solid #fff;
+      }
     }
   }
   & > .copy{

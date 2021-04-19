@@ -8,8 +8,8 @@
         <p>В ближайшее время
           мы с вами обязательно
           свяжемся</p>
-        <button class="button_pop" @click.prevent="$parent.handleScroll">Ok</button>
       </div>
+      <button class="button_pop" @click.prevent="$emit('cb-button',$event)">Ok</button>
     </div>
   </div>
 </template>
@@ -46,24 +46,44 @@ export default {
     border: 1px solid #c8c8c8;
     border-radius: 4px;
     & > .thanks{
+      display: flex;
       width: 320px;
       height: 50px;
       background-color: #ff431e;
       border-radius: 4px;
+      justify-content: center;
+      align-items: center;
+      & > p{
+        font-family: "Open Sans";
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 700;
+        color: #ffffff;
+      }
     }
     & > .pop_text{
+      margin:30px 0;
       font-family: "Open Sans";
       font-size: 18px;
       line-height: 24px;
       font-weight: 400;
       color: #505050;
-      & > button{
-        width: 120px;
-        height: 40px;
-        background-color: #ff431e;
-        box-shadow: inset 0px -2px 0px 0px #bb2406;
-        border-radius: 4px;
+      & > p{
+        padding: 0 50px;
       }
+
+    }
+    & > button{
+      width: 120px;
+      height: 40px;
+      background-color: #ff431e;
+      box-shadow: inset 0px -2px 0px 0px #bb2406;
+      border-radius: 4px;
+      font-family: "Open Sans";
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 700;
+      color: #ffffff;
     }
   }
 }

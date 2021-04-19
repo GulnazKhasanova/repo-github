@@ -55,6 +55,10 @@ export default {
         color: #969696;
       }
     }
+    & > li:hover{
+      -webkit-filter : hue-rotate(120deg);
+      filter : hue-rotate(120deg);
+    }
 
   }
 }
