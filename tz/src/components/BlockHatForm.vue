@@ -42,6 +42,8 @@ export default {
     width: 50%;
 & > h4{
     margin-top: 84px;
+    padding-left: 3%;
+    padding-right: 3%;
     font-family: $ing-b-it;
     font-size: 36px;
     line-height: 1.2;
@@ -59,6 +61,8 @@ export default {
     color: #282828;
     text-align: left;
     margin-top:25px;
+    padding-left: 3%;
+    padding-right: 3%;
   }
 }
 & > .hat_form{

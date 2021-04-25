@@ -55,7 +55,8 @@ export default {
     justify-content: space-between;
 
     & > .map_footer{
-      width: 50%;
+      width: 48%;
+      margin-left: 2%;
       & > img{
         width: 100%;
       }
@@ -65,6 +66,8 @@ export default {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
+      padding-left: 3%;
+      padding-right: 1%;
       & > h4{text-align: right;
         font-size: 36px;
         line-height: 1.2;

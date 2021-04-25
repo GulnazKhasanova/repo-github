@@ -1,18 +1,32 @@
 <template>
   <div id="menu">
     <ul>
-      <li><img src="@/assets/img/houseoutline_112480.svg" alt=""> <p>Описание услуги</p> </li>
+      <li><house></house><p>Описание услуги</p></li>
+      <li><favorit></favorit><p>Зачем мне это? </p></li>
+      <li><useroutline></useroutline><p>Почему мы?</p> </li>
+      <li><visibl></visibl><p>А что есть?</p></li>
+      <li><crosshair></crosshair><p>А где?</p></li>
+
+      <!--<li><img src="@/assets/img/houseoutline_112480.svg" alt=""> <p>Описание услуги</p> </li>
       <li><img src="@/assets/img/favoritesstaroutline_112570.svg" alt=""><p>Зачем мне это? </p></li>
       <li><img src="@/assets/img/useroutline_112519.svg" alt=""><p>Почему мы?</p></li>
       <li><img src="@/assets/img/visibleeyedesigntooloutline_112522.svg" alt=""><p>А что есть?</p></li>
-      <li><img src="@/assets/img/crosshair_112503.svg" alt=""><p>А где?</p></li>
+      <li><img src="@/assets/img/crosshair_112503.svg" alt=""><p>А где?</p></li>-->
     </ul>
   </div>
 </template>
 
 <script>
+import Crosshair from "../components/crosshair";
+import Visibl from "../components/visibleeyedesigntooloutline";
+import Useroutline from "../components/useroutline";
+import Favorit from "../components/favorit";
+import House from "../components/house";
+
+
 export default {
-  name: "Header"
+  name: "Header",
+  components:{ Crosshair, Visibl, Useroutline, Favorit, House },
 }
 </script>
 
@@ -37,7 +51,7 @@ export default {
       width: auto;
       height: 61px;
       margin: 0 auto;
-      justify-content: space-between;
+      align-items: center;
 
       &>img{
         opacity: 0.4;
@@ -55,11 +69,19 @@ export default {
         color: #969696;
       }
     }
-    & > li:hover{
-      -webkit-filter : hue-rotate(120deg);
-      filter : hue-rotate(120deg);
+    & > li:hover svg{
+        fill:red;
+    }
+    & > li:hover p{
+      color:red;
     }
 
+    & > li:active svg{
+      fill:aquamarine;
+    }
+    & > li:active p{
+      color:aquamarine;
+    }
   }
 }
 

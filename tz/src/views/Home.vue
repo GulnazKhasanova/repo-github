@@ -8,19 +8,19 @@
     <kak-danu></kak-danu>
     <kruty>
       <img class="kruty_img" src="~@/assets/img/shape_6_217.png" alt="">
-      <p>Крути вниз</p>
+      <p id="home">Крути вниз</p>
     </kruty>
     <sitebar></sitebar>
     <block-hat-form></block-hat-form>
     <kruty><img class="kruty_img" src="~@/assets/img/shape_6_350.png" alt="">
-      <p>Зачем мне это?</p></kruty>
+      <p id="for">Зачем мне это?</p></kruty>
     <tint-block></tint-block>
     <kruty><img class="kruty_img" src="~@/assets/img/shape_6_1672.png" alt="">
-      <p>А что есть?</p></kruty>
+      <p id="have">А что есть?</p></kruty>
     <contacts></contacts>
       <phone></phone>
     <kruty><img class="kruty_img" src="~@/assets/img/shape_6_217.png" alt="">
-      <p>А где?</p></kruty>
+      <p id="where">А где?</p></kruty>
   </div>
 </template>
 

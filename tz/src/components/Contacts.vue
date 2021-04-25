@@ -52,6 +52,8 @@ name: "Contacts"
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding-left: 1%;
+    padding-right: 3%;
 & > h4{
     text-shadow: -1px 1px 0px 0px #003c66;
     font-family: $ing-it;
@@ -80,6 +82,8 @@ name: "Contacts"
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    padding-left: 3%;
+    padding-right: 1%;
 & > h4{
     text-shadow: -1px 1px 0px 0px #003c66;
     font-family: $ing-it;
