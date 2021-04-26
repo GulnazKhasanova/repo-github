@@ -1,4 +1,5 @@
 <template>
+  <adapt-menu></adapt-menu>
   <div id="menu">
     <ul>
       <li><house></house><p>Описание услуги</p></li>
@@ -22,11 +23,12 @@ import Visibl from "../components/visibleeyedesigntooloutline";
 import Useroutline from "../components/useroutline";
 import Favorit from "../components/favorit";
 import House from "../components/house";
+import AdaptMenu from "./AdaptMenu";
 
 
 export default {
   name: "Header",
-  components:{ Crosshair, Visibl, Useroutline, Favorit, House },
+  components:{ Crosshair, Visibl, Useroutline, Favorit, House, AdaptMenu },
 }
 </script>
 

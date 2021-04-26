@@ -174,7 +174,7 @@ body{}
   .tint-block{
    display: none;
   }
-  .banner_l0, .kakdanu, .kruty, .box_img, .banner_l1{
+  #menu,.banner_l0, .kakdanu, .kruty, .box_img, .banner_l1{
     display: none;
   }
   .phone{
@@ -255,5 +255,8 @@ body{}
       }
 
     }
+  nav{
+    display: flex;
+  }
   }
 
