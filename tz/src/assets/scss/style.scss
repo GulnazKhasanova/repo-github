@@ -35,7 +35,17 @@ body{}
             url('~@/assets/img/shape_7_587.png')no-repeat 19% 25%,
             url('~@/assets/img/vector_smart_object_586.png')no-repeat 18% 25%,
             url('~@/assets/img/layer_18_654.png') no-repeat ,
-            url('~@/assets/img/bg_603.png') top right 10px no-repeat;
+            url('~@/assets/img/bg_603.png') top right 10px no-repeat!important;
+    & > .tint_b_comp .row1{
+
+    }
+    & > .tint_b_comp .row2{margin-left: 13%!important;
+      margin-right: 28%!important;}
+    & > .tint_b_comp .row3{
+      margin-top: 36px!important;
+      margin-left: 23%!important;
+      margin-right: 22%!important;
+    }
   }
 }
 @media (min-width: 1050px) and (max-width: 1140px){
@@ -68,10 +78,27 @@ body{}
             url('~@/assets/img/shape_7_587.png')no-repeat 16% 25%,
             url('~@/assets/img/vector_smart_object_586.png')no-repeat 15% 25%,
             url('~@/assets/img/layer_18_654.png') no-repeat ,
-            url('~@/assets/img/bg_603.png') top right 10px no-repeat;
+            url('~@/assets/img/bg_603.png') top right 10px no-repeat!important;
+    & > .tint_b_comp .row1 img{
+      margin-left: 18%!important;
+      margin-right: 17%!important;
+    }
+    & > .tint_b_comp .row2{margin-left: 11%!important;
+      margin-right: 27%!important;}
+    & > .tint_b_comp .row3{
+      margin-top: 36px!important;
+      margin-left: 20%!important;
+      margin-right: 19%!important;
+    }
   }
 }
 @media (min-width: 908px) and (max-width: 1050px){
+  .tint_b_comp {
+    background: url(/img/macbook_1630.8d8190d5.png) no-repeat 30% 82% / 95%,
+    url(/img/cup_1654.b11921c9.png) no-repeat 100% 76% / 25%,
+    url(/img/layer_19_1766.5147b20b.png) no-repeat 2% 72% / 25%,
+    url(/img/shadow_1768.b8b5357c.png) no-repeat 8% 87% / 25% !important;
+  }
   .tint-block{
     background:
             url('~@/assets/img/pin_638.png')no-repeat 23% 10%,
@@ -101,10 +128,31 @@ body{}
             url('~@/assets/img/shape_7_587.png')no-repeat 10% 25%,
             url('~@/assets/img/vector_smart_object_586.png')no-repeat 9% 25%,
             url('~@/assets/img/layer_18_654.png') no-repeat ,
-            url('~@/assets/img/bg_603.png') top right 10px no-repeat;
+            url('~@/assets/img/bg_603.png') top right 10px no-repeat !important;
+    & > .tint_b_comp .row1 img{
+      margin-left: 13%!important;
+      margin-right: 12%!important;
+    }
+    & > .tint_b_comp .row2{margin-left: 6%!important;
+      margin-right: 23%!important;}
+    & > .tint_b_comp .row3{
+      margin-top: 36px!important;
+      margin-left: 16%!important;
+      margin-right: 16%!important;
+    }
   }
 }
 @media (min-width: 838px) and (max-width: 908px){
+  .tint_b_comp {
+    background: url(/img/macbook_1630.8d8190d5.png) no-repeat 30% 82% / 86%,
+    url(/img/cup_1654.b11921c9.png) no-repeat 100% 76% / 25%,
+    url(/img/layer_19_1766.5147b20b.png) no-repeat 2% 72% / 25%,
+    url(/img/shadow_1768.b8b5357c.png) no-repeat 8% 87% / 25% !important;
+  }
+  .kak_text{
+    margin: 5% 4%;
+    font-size: 24px;
+  }
   .tint-block{
     background:
             url('~@/assets/img/pin_638.png')no-repeat 21% 10%,
@@ -134,10 +182,66 @@ body{}
             url('~@/assets/img/shape_7_587.png')no-repeat 5% 25%,
             url('~@/assets/img/vector_smart_object_586.png')no-repeat 3% 25%,
             url('~@/assets/img/layer_18_654.png') no-repeat ,
-            url('~@/assets/img/bg_603.png') top right 10px no-repeat;
+            url('~@/assets/img/bg_603.png') top right 10px no-repeat !important;
+    & > .tint_b_comp .row1 img{
+      margin-left: 11%!important;
+      margin-right: 8%!important;
+    }
+    & > .tint_b_comp .row2{margin-left: 2%!important;
+      margin-right: 21%!important;}
+    & > .tint_b_comp .row3{
+      margin-top: 36px!important;
+      margin-left: 14%!important;
+      margin-right: 14%!important;
+    }
   }
 }
 @media (min-width: 576px) and (max-width: 838px) {
+  .tint_b_comp {
+    background: url(/img/macbook_1630.8d8190d5.png) no-repeat 30% 82% / 86%,
+    url(/img/cup_1654.b11921c9.png) no-repeat 100% 76% / 25%,
+    url(/img/layer_19_1766.5147b20b.png) no-repeat 2% 72% / 25%!important;
+    & > .row1 img{
+      margin-left: 11%!important;
+      margin-right: 8%!important;
+      width: 19%!important;
+
+    }
+    & > .row2{
+      margin-top: calc(178px - 17%)!important;
+      margin-left:7%!important;
+      margin-right: 26%!important;
+    & > img{
+      margin-right: 5%!important;
+      margin-left: 5%!important;
+      width: 19%!important;
+    }}
+    & > .row3{
+      margin-top: calc(178px - 17%)!important;
+      margin-left: 16%!important;
+      margin-right: 20%!important;
+      & > img{
+        margin-left: 2%!important;
+        margin-right: 2%!important;
+        width: 19%!important;
+      }
+    }
+  }
+  .kak_text{
+    margin: 5% 4% !important;
+    font-size: 24px !important;
+  }
+  .kakdanu,
+  .banner_l1,
+  .banner_l0{
+    width: 100%;
+  }
+  .banner_l1 h3{
+    width: 100%;
+  }
+  .hat_img{
+    display: none;
+  }
   .tint-block{
     background:
             url('~@/assets/img/pin_638.png')no-repeat 21% 10%,
@@ -147,7 +251,7 @@ body{}
             url('~@/assets/img/pin_642.png')no-repeat 80% 10%,
             url('~@/assets/img/shape_7_573.png')no-repeat 85% 10%,
             url('~@/assets/img/vector_smart_object_572.png')no-repeat 84% 10%,
-            url('~@/assets/img/shape_9_560.png')no-repeat 62.5% 33%,
+            url('~@/assets/img/shape_9_560.png')no-repeat 61y% 33%,
             url('~@/assets/img/shape_8_559.png')no-repeat 69.6% 25%,
             url('~@/assets/img/vector_smart_object_557.png')no-repeat 69% 25%,
             url('~@/assets/img/tape_646.png')no-repeat 38.5% 20.5%,
@@ -167,14 +271,18 @@ body{}
             url('~@/assets/img/shape_7_587.png')no-repeat 5% 25%,
             url('~@/assets/img/vector_smart_object_586.png')no-repeat 3% 25%,
             url('~@/assets/img/layer_18_654.png') no-repeat ,
-            url('~@/assets/img/bg_603.png') top right 10px no-repeat;
+            url('~@/assets/img/bg_603.png') top right 10px no-repeat !important;;
   }
 }
 @media (max-width: 576px){
+  .sitebar{
+    display: none;
+  }
+
   .tint-block{
    display: none;
   }
-  #menu,.banner_l0, .kakdanu, .kruty, .box_img, .banner_l1{
+  #menu,.banner_l0, .kakdanu, .kruty, .box_img, .banner_l1, .hat_img {
     display: none;
   }
   .phone{
@@ -236,6 +344,7 @@ body{}
         width: 96%;
         margin: 0 auto;
         & > img{
+          margin: 0 auto;
           width: 96%;
         }
       }

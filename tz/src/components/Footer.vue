@@ -36,6 +36,7 @@ export default {
 
 <style lang="scss">
 .footer{
+  margin: 0 auto;
   margin-top: 100px;
   position: relative;
   max-width: 2200px;

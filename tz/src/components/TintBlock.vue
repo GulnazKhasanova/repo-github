@@ -2,20 +2,20 @@
   <div class="tint-block">
     <h4 class="tint_b_text">Нам доверяют</h4>
     <div class="tint_b_comp">
-      <p class="row1">
+      <div class="row1">
         <img class="tint_b_img" src="~@/assets/img/layer_11_607.png" alt="">
         <img class="tint_b_img" src="~@/assets/img/layer_17_619.png" alt="">
-      </p>
-      <p class="row2">
+      </div>
+      <div class="row2">
         <img class="tint_b_img" src="~@/assets/img/layer_12_609.png" alt="">
         <img class="tint_b_img" src="~@/assets/img/layer_15_615.png" alt="">
         <img class="tint_b_img" src="~@/assets/img/layer_16_617.png" alt="">
-      </p>
-      <p class="row3">
+      </div>
+      <div class="row3">
         <img class="tint_b_img" src="~@/assets/img/layer_13_611.png" alt="">
         <img class="tint_b_img" src="~@/assets/img/layer_14_613.png" alt="">
         <img class="tint_b_img" src="~@/assets/img/layer_10_513.png" alt="">
-      </p>
+      </div>
 
     </div>
   </div>
@@ -37,39 +37,39 @@ name: "TintBlock"
   flex-direction: column;
   align-items: center;
   background:
-      url('~@/assets/img/pin_638.png')no-repeat 36% 10%,
-      url('~@/assets/img/shape_9_592.png')no-repeat 34.2% 20.6%,
-      url('~@/assets/img/shape_8_591.png')no-repeat 35.3% 10%,
-      url('~@/assets/img/vector_smart_object_590.png')no-repeat 35% 10%,
-      url('~@/assets/img/pin_642.png')no-repeat 63% 10%,
-      url('~@/assets/img/shape_7_573.png')no-repeat 64% 10%,
-      url('~@/assets/img/vector_smart_object_572.png')no-repeat 63% 10%,
-      url('~@/assets/img/shape_9_560.png')no-repeat 54.5% 33%,
-      url('~@/assets/img/shape_8_559.png')no-repeat 57.6% 25%,
-      url('~@/assets/img/vector_smart_object_557.png')no-repeat 57% 25%,
-      url('~@/assets/img/tape_646.png')no-repeat 45.5% 20.5%,
-      url('~@/assets/img/shape_7_551.png')no-repeat 45.3% 24.8%,
-      url('~@/assets/img/vector_smart_object_550.png')no-repeat 45% 25%,
-      url('~@/assets/img/tape_644.png')no-repeat 66% 29%,
-      url('~@/assets/img/shape_11_568.png')no-repeat 64.3% 42.2%,
-      url('~@/assets/img/shape_10_567.png')no-repeat 63.5% 34%,
-      url('~@/assets/img/vector_smart_object_563.png')no-repeat 63% 35%,
+      url('~@/assets/img/pin_638.png')no-repeat 28% 10%,
+      url('~@/assets/img/shape_9_592.png')no-repeat 25.2% 20.6%,
+      url('~@/assets/img/shape_8_591.png')no-repeat 26.3% 10%,
+      url('~@/assets/img/vector_smart_object_590.png')no-repeat 26% 10%,
+      url('~@/assets/img/pin_642.png')no-repeat 71% 10%,
+      url('~@/assets/img/shape_7_573.png')no-repeat 74% 10%,
+      url('~@/assets/img/vector_smart_object_572.png')no-repeat 73% 10%,
+      url('~@/assets/img/shape_9_560.png')no-repeat 58.5% 33%,
+      url('~@/assets/img/shape_8_559.png')no-repeat 63.6% 25%,
+      url('~@/assets/img/vector_smart_object_557.png')no-repeat 63% 25%,
+      url('~@/assets/img/tape_646.png')no-repeat 42.5% 20.5%,
+      url('~@/assets/img/shape_7_551.png')no-repeat 42.3% 24.8%,
+      url('~@/assets/img/vector_smart_object_550.png')no-repeat 42% 25%,
+      url('~@/assets/img/tape_644.png')no-repeat 76% 29%,
+      url('~@/assets/img/shape_11_568.png')no-repeat 74.3% 42.2%,
+      url('~@/assets/img/shape_10_567.png')no-repeat 73.5% 34%,
+      url('~@/assets/img/vector_smart_object_563.png')no-repeat 73% 35%,
       url('~@/assets/img/pin_643.png')no-repeat 50% 30%,
       url('~@/assets/img/shape_7_549.png')no-repeat 50.6% 34.6%,
       url('~@/assets/img/vector_smart_object_548.png')no-repeat 50% 35%,
-      url('~@/assets/img/shape_11_583.png')no-repeat 38% 43.5%,
-      url('~@/assets/img/shape_10_582.png')no-repeat 38% 35%,
-      url('~@/assets/img/vector_smart_object_581.png')no-repeat 37% 35%,
-      url('~@/assets/img/tape_645.png')no-repeat 28% 20%,
-      url('~@/assets/img/shape_7_587.png')no-repeat 31% 25%,
-      url('~@/assets/img/vector_smart_object_586.png')no-repeat 30% 25%,
-      url('~@/assets/img/layer_18_654.png') no-repeat,
+      url('~@/assets/img/shape_11_583.png')no-repeat 30% 43.5%,
+      url('~@/assets/img/shape_10_582.png')no-repeat 30% 35%,
+      url('~@/assets/img/vector_smart_object_581.png')no-repeat 29% 35%,
+      url('~@/assets/img/tape_645.png')no-repeat 16% 20%,
+      url('~@/assets/img/shape_7_587.png')no-repeat 19% 25%,
+      url('~@/assets/img/vector_smart_object_586.png')no-repeat 18% 25%,
+      url('~@/assets/img/layer_18_654.png') no-repeat ,
       url('~@/assets/img/bg_603.png') top right 10px no-repeat;
 & > .tint_b_comp{
     margin: 0 auto;
     height:1200px;
     max-width:2200px;
-    width: 1100px;
+    width: 100%;
     position: absolute;
     background:
         url('~@/assets/img/macbook_1630.png') no-repeat 30% 82%,
@@ -77,41 +77,56 @@ name: "TintBlock"
         url('~@/assets/img/layer_19_1766.png') no-repeat 2% 72%,
         url('~@/assets/img/shadow_1768.png') no-repeat 8% 87%;
 & > .row1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
     margin-left:9%;
     margin-right:9%;
     margin-top: 150px;
 & > img{
     margin-left:19%;
     margin-right:18%;
+    height: 100%;
   }
 }
 & > .row2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
     margin-left:12%;
     margin-right:27%;
     margin-top: 30px;
 & > img{
     margin-left:5%;
-    margin-right:10%;}
+    margin-right:10%;
+  height: 100%;}
 }
-& > .row2 img:nth-child(n+2){
-    margin-left:6%;
-    margin-bottom:4%;
-  }
+//& > .row2 img:nth-child(n+2){
+//    margin-left:6%;
+//    margin-bottom:4%;
+//  }
 & > .row3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
     margin-top: 5px;
     margin-left:21%;
     margin-right:21%;
 & > img{
     margin-left:6%;
     margin-right:6%;
+  height: 100%;
   }
 }
-& > .row3 img:nth-child(n+3){
-    margin-top:4%;
-  }
-> .row3 img:not(:last-child){
-  margin-bottom:4%;
-}
+//& > .row3 img:nth-child(n+3){
+//    margin-top:4%;
+//  }
+//> .row3 img:not(:last-child){
+//  margin-bottom:4%;
+//}
 
 }
 & > .tint_b_text{
