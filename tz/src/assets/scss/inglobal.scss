@@ -1,28 +1,29 @@
 @font-face {
-  font-family: "inglobal-Regular";
-  src:  url("~@/assets/fonts/inglobal.ttf") format("font-truetype");
+  font-family: 'Inglobal-Regular';
+  src: url('~@/assets/fonts/inglobal.woff') format('woff'), url('~@/assets/fonts/inglobal.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "inglobal-Italic";
-  src:  url("~@/assets/fonts/inglobali.ttf") format("font-truetype");
+  font-family: 'inglobal-Italic';
+  src: url('~@/assets/fonts/inglobali.woff') format('woff'), url('~@/assets/fonts/inglobali.ttf') format('ttf');
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
-  font-family: "inglobal-Bold-Italic";
-  src:  url("~@/assets/fonts/inglobalbi.ttf") format("font-truetype");
+  font-family: 'inglobal-Bold-Italic';
+  src: url('~@/assets/fonts/inglobalbi.woff') format('woff'), url('~@/assets/fonts/inglobalbi.ttf') format('ttf');
   font-weight: bold;
   font-style: italic;
 }
 @font-face {
-  font-family: "inglobal-Bold";
-  src:  url("~@/assets/fonts/inglobalb.ttf") format("font-truetype");
+  font-family: 'inglobal-Bold';
+  src: url('~@/assets/fonts/inglobalb.woff') format('woff'), url('~@/assets/fonts/inglobalb.ttf') format('ttf');
   font-weight: bold;
   font-style: normal;
 }
-$ing-reg: 'inglobal-Regular', sans-serif;
+$ing-reg: 'Inglobal-Regular', sans-serif;
 $ing-it: 'inglobal-Italic', sans-serif;
 $ing-b-it: 'inglobal-Bold-Italic', sans-serif;
 $ing-b: 'inglobal-Bold', sans-serif;
